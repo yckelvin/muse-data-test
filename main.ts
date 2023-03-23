@@ -1,13 +1,5 @@
-input.onButtonPressed(Button.A, function () {
-    MuseIoT.sendMusespeak(
-    "ML1234",
-    input.lightLevel(),
-    0,
-    0,
-    0,
-    0,
-    0
-    )
+input.onButtonPressed(Button.A, function on_button_pressed_a() {
+    MuseIoT.sendMusespeak("ML1234", input.lightLevel(), 0, 0, 0, 0, 0)
 })
 basic.showNumber(0)
 MuseIoT.initializeWifi()
